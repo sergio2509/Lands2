@@ -14,7 +14,7 @@
                 Padding="5">
                 
                 <Image
-                    WidthRequest="200"
+                    WidthRequest="75"
                     Source="Onu"
                     VerticalOptions="StartAndExpand">
                 </Image>
@@ -29,7 +29,7 @@
                     <Label
                         Grid.Row="0"
                         Grid.Column="0"
-                        FontSize="Small"
+                        FontSize="Micro"
                         Text="E-Mail"
                         TextColor="Black"
                         VerticalOptions="Center">
@@ -37,6 +37,7 @@
                     <Entry
                         Grid.Row="0"
                         Grid.Column="1"
+                        FontSize="Medium"
                         Keyboard="Email"
                         Text="{Binding Email, Mode=TwoWay}"
                         TextColor="Black"
@@ -45,12 +46,13 @@
                     <Label
                         Grid.Row="1"
                         Grid.Column="0"
-                        FontSize="Small"
+                        FontSize="Micro"
                         Text="Password"
                         TextColor="Black"
                         VerticalOptions="Center">
                     </Label>
                     <Entry
+                        FontSize="Medium"
                         Grid.Row="1"
                         Grid.Column="1"
                         IsPassword="True"
@@ -70,6 +72,7 @@
                     Orientation="Horizontal"
                     VerticalOptions="CenterAndExpand">
                     <Label
+                        FontSize="Medium"
                         HorizontalOptions="StartAndExpand"
                         VerticalOptions="Center"
                         Text="Remember on this device"
@@ -82,6 +85,7 @@
                 </StackLayout>
                
                 <Label
+                    FontSize="Medium"
                     HorizontalOptions="Center"
                     Text="Forgot your password"
                     TextColor="Blue"
@@ -89,22 +93,24 @@
                 </Label>
                 
                 <StackLayout
-                    Margin="40,0"
+                    Margin="20,0"
                     Orientation="Horizontal"
                     VerticalOptions="CenterAndExpand">
                     <Button
                         BackgroundColor="Navy"
-                        BorderRadius="23"
+                        BorderRadius="20"
                         Command="{Binding LoginComand}"
-                        HeightRequest="46"
+                        FontSize="Medium"
+                        HeightRequest="40"
                         HorizontalOptions="FillAndExpand"
                         Text="Login"
                         TextColor="White">
                     </Button>
                     <Button
                         BackgroundColor="Purple"
-                        BorderRadius="23"
-                        HeightRequest="46"
+                        BorderRadius="20"
+                        HeightRequest="40"
+                        FontSize="Medium"
                         HorizontalOptions="FillAndExpand"
                         Text="Register"
                         TextColor="White">
@@ -113,22 +119,21 @@
                 <StackLayout
                     HorizontalOptions="Center"
                     Orientation="Horizontal"
-                    Padding="10"
                     VerticalOptions="EndAndExpand">
                     <Image
-                        Margin="20,0"
+                        Margin="5,0"
                         Source="Facebook_logo"
-                        WidthRequest="50">
+                        WidthRequest="25">
                     </Image>
                     <Image
-                        Margin="20,0"
+                        Margin="5,0"
                         Source="Twitter_logo"
-                        WidthRequest="50">
+                        WidthRequest="25">
                     </Image>
                     <Image
-                        Margin="20,0"
+                        Margin="5,0"
                         Source="Instagram_logo"
-                        WidthRequest="50">
+                        WidthRequest="25">
                     </Image>
                 </StackLayout>
             </StackLayout>

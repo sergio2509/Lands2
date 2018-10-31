@@ -158,15 +158,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Onu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Facebook_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Instagram_logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\Onu.png" />
+  </ItemGroup>
+  <ItemGroup>
     <BundleResource Include="Resources\Twitter_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Facebook_logo.png" />
   </ItemGroup>
 </Project>
