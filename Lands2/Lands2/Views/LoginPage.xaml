@@ -8,12 +8,13 @@
     
     <ContentPage.Content>
         <ScrollView
-            BindingContext="{Binding Login}">
+            BindingContext="{Binding Login}"
+            BackgroundColor="White">
             <StackLayout
                 Padding="5">
                 
                 <Image
-                    WidthRequest="150"
+                    WidthRequest="200"
                     Source="Onu"
                     VerticalOptions="StartAndExpand">
                 </Image>
@@ -26,22 +27,27 @@
                         <ColumnDefinition Width="3*"/>
                     </Grid.ColumnDefinitions>
                     <Label
-                         Grid.Row="0"
-                         Grid.Column="0"
-                         Text="E-Mail"
-                         VerticalOptions="Center">
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        FontSize="Small"
+                        Text="E-Mail"
+                        TextColor="Black"
+                        VerticalOptions="Center">
                     </Label>
                     <Entry
                         Grid.Row="0"
                         Grid.Column="1"
                         Keyboard="Email"
                         Text="{Binding Email, Mode=TwoWay}"
+                        TextColor="Black"
                         Placeholder="Enter your E-Mail">
                     </Entry>
                     <Label
                         Grid.Row="1"
                         Grid.Column="0"
+                        FontSize="Small"
                         Text="Password"
+                        TextColor="Black"
                         VerticalOptions="Center">
                     </Label>
                     <Entry
@@ -49,7 +55,8 @@
                         Grid.Column="1"
                         IsPassword="True"
                         Placeholder="Enter your Password"
-                        Text="{Binding Password, Mode=TwoWay}">
+                        Text="{Binding Password, Mode=TwoWay}"
+                        TextColor="Black">
                     </Entry>
                 </Grid>
                
@@ -65,7 +72,8 @@
                     <Label
                         HorizontalOptions="StartAndExpand"
                         VerticalOptions="Center"
-                        Text="Remember on this device">
+                        Text="Remember on this device"
+                        TextColor="Black">
                     </Label>
                     <Switch
                         IsToggled="{Binding IsRemember, Mode=TwoWay}"
