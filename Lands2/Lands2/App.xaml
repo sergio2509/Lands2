@@ -5,9 +5,12 @@
     xmlns:infra="clr-namespace:Lands2.Infrastructure"
     x:Class="Lands2.App">
     <Application.Resources>
+       
+        
         <ResourceDictionary>
             <infra:InstanceLocator x:Key="Locator"/>
         </ResourceDictionary>
+        
         
     </Application.Resources>
 </Application>

@@ -14,13 +14,13 @@
                 Padding="5">
                 
                 <Image
-                    WidthRequest="75"
+                    WidthRequest="100"
                     Source="Onu"
                     VerticalOptions="StartAndExpand">
                 </Image>
                 
                 <Grid
-                    Margin="10,0"
+                    Margin="5,0"
                     VerticalOptions="CenterAndExpand">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -37,7 +37,7 @@
                     <Entry
                         Grid.Row="0"
                         Grid.Column="1"
-                        FontSize="Medium"
+                        FontSize="Micro"
                         Keyboard="Email"
                         Text="{Binding Email, Mode=TwoWay}"
                         TextColor="Black"
@@ -52,7 +52,7 @@
                         VerticalOptions="Center">
                     </Label>
                     <Entry
-                        FontSize="Medium"
+                        FontSize="Micro"
                         Grid.Row="1"
                         Grid.Column="1"
                         IsPassword="True"
@@ -72,7 +72,7 @@
                     Orientation="Horizontal"
                     VerticalOptions="CenterAndExpand">
                     <Label
-                        FontSize="Medium"
+                        FontSize="Micro"
                         HorizontalOptions="StartAndExpand"
                         VerticalOptions="Center"
                         Text="Remember on this device"
@@ -85,7 +85,7 @@
                 </StackLayout>
                
                 <Label
-                    FontSize="Medium"
+                    FontSize="Micro"
                     HorizontalOptions="Center"
                     Text="Forgot your password"
                     TextColor="Blue"
@@ -99,19 +99,21 @@
                     <Button
                         BackgroundColor="Navy"
                         BorderRadius="20"
-                        Command="{Binding LoginComand}"
-                        FontSize="Medium"
+                        Command="{Binding LoginCommand}"
+                        FontSize="Micro"
                         HeightRequest="40"
                         HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Login"
                         TextColor="White">
                     </Button>
                     <Button
                         BackgroundColor="Purple"
                         BorderRadius="20"
+                        FontSize="Micro"
                         HeightRequest="40"
-                        FontSize="Medium"
                         HorizontalOptions="FillAndExpand"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Register"
                         TextColor="White">
                     </Button>
@@ -123,17 +125,17 @@
                     <Image
                         Margin="5,0"
                         Source="Facebook_logo"
-                        WidthRequest="25">
+                        WidthRequest="50">
                     </Image>
                     <Image
                         Margin="5,0"
                         Source="Twitter_logo"
-                        WidthRequest="25">
+                        WidthRequest="50">
                     </Image>
                     <Image
                         Margin="5,0"
                         Source="Instagram_logo"
-                        WidthRequest="25">
+                        WidthRequest="50">
                     </Image>
                 </StackLayout>
             </StackLayout>
