@@ -116,7 +116,11 @@
             this.IsRunning = false;
             this.isEnabled = true;
 
-            this.Email = string.Empty;
+            if (this.IsRemember == false) 
+            {
+               this.Email = string.Empty;
+            }
+
             this.Password = string.Empty;
 
             MainViewModel.GetInstance().Lands = new LandsViewModel();
