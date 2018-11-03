@@ -1,4 +1,4 @@
-﻿namespace Lands.ViewModels
+﻿namespace Lands2.ViewModels
 {
    using System.Collections.Generic;
    using System.ComponentModel;
