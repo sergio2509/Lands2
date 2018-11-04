@@ -3,7 +3,7 @@
    using Newtonsoft.Json;
    using System.Collections.Generic;
 
-   class Land
+   public class Land
    {
       [JsonProperty(PropertyName = "name")]
       public string Name      {         get; set;      }
@@ -36,16 +36,16 @@
       public int Population      {         get; set;      }
 
       [JsonProperty(PropertyName = "latlng")]
-      public List<int> Latlng      {         get; set;      }
+      public List<double> Latlng      {         get; set;      }
 
       [JsonProperty(PropertyName = "demonym")]
       public string Demonym      {         get; set;      }
 
       [JsonProperty(PropertyName = "area")]
-      public int Area      {         get; set;      }
+      public double? Area      {         get; set;      }
 
       [JsonProperty(PropertyName = "gini")]
-      public double Gini      {         get; set;      }
+      public double? Gini      {         get; set;      }
 
       [JsonProperty(PropertyName = "timezones")]
       public List<string> Timezones      {         get; set;      }

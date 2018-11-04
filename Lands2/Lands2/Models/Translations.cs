@@ -3,7 +3,7 @@
 
    using Newtonsoft.Json;
 
-   class Translations
+   public class Translations
    {
       
       [JsonProperty(PropertyName = "de")]

@@ -2,7 +2,7 @@
 {
    using Newtonsoft.Json;
 
-   class RegionalBloc
+   public class RegionalBloc
    {
 
       [JsonProperty(PropertyName = "acronym")]
