@@ -10,6 +10,12 @@
         <StackLayout
             BindingContext="{Binding Lands}" 
             Padding = "5">
+            <SearchBar
+                Placeholder="Search..."
+                SearchCommand="{Binding SearchCommand}"
+                Text="{Binding Filter}">
+                
+            </SearchBar>
             <ListView 
                 HasUnevenRows="true" 
                 IsPullToRefreshEnabled="true"
