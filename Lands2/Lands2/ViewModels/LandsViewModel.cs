@@ -109,8 +109,10 @@
          }
          else
          {
-            this.Lands = new ObservableCollection<Land>(
-               this.landsList.Where(
+            this.Lands = new ObservableCollection<Land>
+            (
+               this.landsList.Where
+               (
                   l => l.Name.ToLower().Contains(this.Filter.ToLower()) ||
                        l.Capital.ToLower().Contains(this.Filter.ToLower())
                )
