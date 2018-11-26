@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
-
-namespace Lands2.Views
+﻿namespace Lands2.Views
 {
+    
+    using Xamarin.Forms;
+
     public partial class LandPage : ContentPage
     {
         public LandPage()

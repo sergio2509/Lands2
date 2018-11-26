@@ -102,7 +102,7 @@
 
       
    
-        #endregion
+      #endregion
 
         #region Methods
 
@@ -139,9 +139,9 @@
 
         #endregion
 
-        #region Commands
+      #region Commands
 
-        public ICommand RefreshCommand
+      public ICommand RefreshCommand
       {
          get
          {
@@ -150,7 +150,8 @@
       }
       private void Refresh()
       {
-         LoadLands();
+            this.Filter = string.Empty;
+            LoadLands();
       }
 
       public ICommand SearchCommand
@@ -162,30 +163,30 @@
       }
       private void Search()
       {
-         FilterLands();
+            FilterLands();
       }
 
-        private void FilterLands()
-        {
-            if (string.IsNullOrEmpty(this.Filter))
-            {
-                this.Lands = new ObservableCollection<LandItemViewModel>(
-                 this.ToLandItemViewModel());
-            }
-            else
-            {
-                this.Lands = new ObservableCollection<LandItemViewModel>
-                (
-                   this.ToLandItemViewModel().Where
-                   (
-                      l => l.Name.ToLower().Contains(this.Filter.ToLower()) ||
-                           l.Capital.ToLower().Contains(this.Filter.ToLower())
-                   )
-                );
-            }
-        }
+      private void FilterLands()
+      {
+          if (string.IsNullOrEmpty(this.Filter))
+          {
+              this.Lands = new ObservableCollection<LandItemViewModel>(
+              this.ToLandItemViewModel());
+          }
+          else
+          {
+              this.Lands = new ObservableCollection<LandItemViewModel>
+              (
+                 this.ToLandItemViewModel().Where
+                 (
+                    l => l.Name.ToLower().Contains(this.Filter.ToLower()) ||
+                         l.Capital.ToLower().Contains(this.Filter.ToLower())
+                 )
+               );
+          }
+      }
 
-        #endregion
+      #endregion
 
-    }
+   }
 }

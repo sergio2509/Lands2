@@ -5,7 +5,7 @@
     x:Class="Lands2.Views.LandsPage"
     BindingContext="{Binding Main,Source={StaticResource Locator}}"
     BackgroundColor="Silver"
-    Title="Lands">
+    Title="Lands List">
     
     <ContentPage.Content>
         <StackLayout
